@@ -157,3 +157,13 @@ Sezione icone
 .layout-6 img {
     width: 100%;
 }
+
+
+/*
+Sezione info
+*/
+
+.full-row .row {
+    max-width: 1200px;
+    margin: auto;
+}
