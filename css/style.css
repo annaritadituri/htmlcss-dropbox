@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 /*
 Sezione header
 */
@@ -36,6 +37,7 @@ header ul {
     position: absolute;
     right: 0;
 }
+
 
 /*
 Sezione jumbotron
@@ -74,10 +76,10 @@ Sezione jumbotron
     width: 100%;
 }
 
+
 /*
 Sezione scelta piano
 */
-
 
 .container-full .row {
     max-width: 1200px;
@@ -100,4 +102,33 @@ Sezione scelta piano
     width: calc(100% / 3);
     border: 1px solid black;
     height: 100%;
+}
+
+
+/*
+Sezione partner
+*/
+
+.layout-2 .row {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 200px;
+}
+
+.layout-2 .col-60 {
+    height: 600px;
+    width: 60%;
+}
+
+.layout-2 .col-40 {
+    height: 600px;
+    width: 40%;
+}
+
+.layout-2 img {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
 }
