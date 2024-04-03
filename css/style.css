@@ -114,7 +114,6 @@ Sezione partner
     margin: auto;
     display: flex;
     flex-direction: row;
-    margin-bottom: 200px;
 }
 
 .layout-2 .col-60 {
@@ -131,4 +130,30 @@ Sezione partner
     height: 600px;
     width: 100%;
     object-fit: cover;
+}
+
+
+/*
+Sezione icone
+*/
+
+
+.layout-6 .row {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.layout-6 .columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.layout-6 .content {
+    height: 500px;
+    width: calc(100% / 3);
+}
+
+.layout-6 img {
+    width: 100%;
 }
