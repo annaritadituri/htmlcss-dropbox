@@ -243,3 +243,26 @@ Sezione domande
     max-width: 1200px;
     margin: auto;
 }
+
+
+/*
+Sezione footer
+*/
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+.layout-5 .row {
+    max-width: 1400px;
+    margin: auto;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+}
+
+footer .row {
+    max-width: 1400px;
+    margin: auto;
+}
