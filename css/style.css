@@ -51,7 +51,7 @@ Sezione jumbotron
     height: 700px;
 }
 
-.columns {
+.container-lg .columns {
     display: flex;
     flex-direction: row;
     height: 70%;
@@ -72,4 +72,32 @@ Sezione jumbotron
 
 .container-lg img {
     width: 100%;
+}
+
+/*
+Sezione scelta piano
+*/
+
+
+.container-full .row {
+    max-width: 1200px;
+    margin: auto;
+    height: 1200px;
+}
+
+.container-full .col-100 {
+    width: 100%;
+    height: 150px;
+}
+
+.container-full .columns {
+    display: flex;
+    flex-direction: row;
+    height: 750px;
+}
+
+.container-full .col-33 {
+    width: calc(100% / 3);
+    border: 1px solid black;
+    height: 100%;
 }
