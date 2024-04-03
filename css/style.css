@@ -14,11 +14,11 @@ header .row {
     justify-content: space-between;
 }
 
-.col-50 {
+header .col-50 {
     width: 50%;
 }
 
-.content {
+header .content {
     height: 100px;
     position: relative;
     display: flex;
@@ -35,4 +35,41 @@ header ul {
 .top-left {
     position: absolute;
     right: 0;
+}
+
+/*
+Sezione jumbotron
+*/
+
+.container-lg {
+    background-color: lightblue;
+}
+
+.container-lg .row {
+    max-width: 1400px;
+    margin: auto;
+    height: 700px;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+}
+
+.container-lg .col-100 {
+    width: 100%;
+    height: 30%;
+}
+
+.container-lg .col-35 {
+    width: 35%;
+}
+
+.container-lg .col-65 {
+    width: 65%;
+}
+
+.container-lg img {
+    width: 100%;
 }
