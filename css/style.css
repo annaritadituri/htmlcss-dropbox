@@ -233,3 +233,13 @@ Sezione iscrizione
 .col-20 {
     width: 20%;
 }
+
+
+/*
+Sezione domande
+*/
+
+.multiple-rows .row {
+    max-width: 1200px;
+    margin: auto;
+}
