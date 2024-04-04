@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: 200;
 }
 
 
@@ -12,7 +14,7 @@ Sezione header
 header .row {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 header .col-50 {
@@ -20,7 +22,6 @@ header .col-50 {
 }
 
 header .content {
-    height: 100px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -34,8 +35,22 @@ header ul {
 }
 
 .top-left {
-    position: absolute;
-    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+/**/
+
+header li {
+    padding: 15px;
+}
+
+header button {
+    position: relative;
+    top: -25%;
+    left: -25%;
+    padding: 8px 18px 8px 18px;
 }
 
 
@@ -44,13 +59,12 @@ Sezione jumbotron
 */
 
 .container-lg {
-    background-color: lightblue;
+    background-color: rgb(168, 202, 226);
 }
 
 .container-lg .row {
     max-width: 1400px;
     margin: auto;
-    height: 700px;
 }
 
 .container-lg .columns {
@@ -72,8 +86,37 @@ Sezione jumbotron
     width: 65%;
 }
 
+.container-lg .content {
+    position: relative;
+    margin-bottom: 20px;
+}
+
 .container-lg img {
     width: 100%;
+    position: absolute;
+}
+
+/**/
+
+.container-lg h1 {
+    font-size: 100px;
+    font-weight: 900;
+    padding: 50px;
+    padding-left: 0;
+}
+
+.container-lg p {
+    margin-bottom: 50px;
+    line-height: 1.5;
+}
+
+.container-lg button {
+    margin-bottom: 50px;
+    padding: 15px;
+}
+
+.container-lg .icon {
+    font-size: 50px;
 }
 
 
@@ -84,24 +127,110 @@ Sezione scelta piano
 .container-full .row {
     max-width: 1200px;
     margin: auto;
-    height: 1200px;
+    margin-top: 170px;
 }
 
 .container-full .col-100 {
     width: 100%;
-    height: 150px;
+}
+
+.container-full .col-100:last-child .content{
+    border: 1px solid lightgray;
+}
+
+.container-full .col-100:last-child .info{
+   padding: 0 40px 10px 40px;
 }
 
 .container-full .columns {
     display: flex;
     flex-direction: row;
-    height: 750px;
+    gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .container-full .col-33 {
     width: calc(100% / 3);
-    border: 1px solid black;
-    height: 100%;
+    border: 1px solid lightgray;
+    padding-bottom: 20px;
+}
+
+.container-full .title {
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.col-33 .info {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+}
+
+.align {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: first baseline;
+}
+
+/**/
+
+
+.container-full h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.container-full input[type= "radio"] {
+    height: 20px;
+    width: 20px;
+}
+
+.info p {
+    margin-bottom: 30px;
+}
+
+.info h2 {
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.info .margin-bottom {
+    margin-bottom: 50px;
+}
+
+.info button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.info hr {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    border: 1px solid lightgray;
+    width: 20%;
+}
+
+.col-33 .icon {
+    margin-right: 5px;
+}
+
+.container-full .col-100 .icon {
+    margin-right: 5px;
+}
+
+.info .blue {
+    color: blue;
+    background-color: white;
 }
 
 
@@ -114,29 +243,55 @@ Sezione partner
     margin: auto;
     display: flex;
     flex-direction: row;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 .layout-2 .col-60 {
-    height: 600px;
     width: 60%;
 }
 
 .layout-2 .col-40 {
-    height: 600px;
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .layout-2 img {
-    height: 600px;
     width: 100%;
     object-fit: cover;
+}
+
+/**/
+
+.col-40 .content {
+    padding: 30px;
+}
+
+.layout-2 h2 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.col-40 .content * {
+    margin-bottom: 30px;
+}
+
+.layout-2 p {
+    line-height: 1.5;
+}
+
+.layout-2 button {
+    background-color: white;
+    border: 1px solid gray;
+    color: gray;
 }
 
 
 /*
 Sezione icone
 */
-
 
 .layout-6 .row {
     max-width: 1200px;
@@ -147,15 +302,35 @@ Sezione icone
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 50px;
 }
 
 .layout-6 .content {
-    height: 500px;
-    width: calc(100% / 3);
+    width: calc((100% - 80px) / 3);
 }
 
 .layout-6 img {
     width: 100%;
+}
+
+/**/
+
+.layout-6 h1 {
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 150px;
+}
+
+.layout-6 h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.layout-6 p {
+    line-height: 1.5;
 }
 
 
@@ -163,9 +338,24 @@ Sezione icone
 Sezione info
 */
 
-.full-row .row {
+.full-row {
     max-width: 1200px;
     margin: auto;
+}
+
+.full-row .row {
+    width: 60%;
+    margin-top: 180px;
+    margin-bottom: 150px;
+}
+
+/**/
+
+.full-row h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    line-height: 1.5;
 }
 
 
@@ -182,7 +372,7 @@ Sezione partnerships
 .max-width-layout .col-33 {
     width: calc(100% / 3);
     height: calc(100vw / 3);
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(243, 243, 243);
 }
 
 .max-width-layout .content {
@@ -193,18 +383,74 @@ Sezione partnerships
 }
 
 .max-width-layout .square {
-    background-color: cornflowerblue;
     width: calc(100% / 2);
+    position: relative;
 }
 
-.max-width-layout img {
-    width: 100%;
-    height: 100%;
-}
-
-#small {
+.max-width-layout img:not(#middle) {
     width: 50%;
-    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    filter: invert();
+}
+
+.middle .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#middle {
+    height: 15%;
+}
+
+/**/
+
+.lightgreen {
+    background-color: rgb(145, 205, 148);
+}
+
+.bordeaux {
+    background-color: rgb(91, 8, 38);
+}
+
+.skyblue {
+    background-color: rgb(0, 137, 196);
+}
+
+.red-lighter {
+    background-color: rgb(225, 20, 34);
+}
+
+.red-darker {
+    background-color: rgb(218, 0, 33);
+}
+
+.lightblue {
+    background-color: rgb(168, 202, 226);
+}
+
+.blue {
+    background-color: rgb(17, 34, 114);
+}
+
+.yellow {
+    background-color: rgb(255, 210, 67);
+}
+
+.middle * {
+    margin: 20px;
+    line-height: 1.5;
+}
+
+.middle hr {
+    width: 25%;
+    color: lightgray;
+    border: 1px solid lightgray;
 }
 
 
@@ -213,7 +459,7 @@ Sezione iscrizione
 */
 
 .max-row {
-    background-color: lightblue;
+    background-color: rgb(168, 202, 226);
 }
 
 .max-row .row {
@@ -223,7 +469,6 @@ Sezione iscrizione
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 300px;
 }
 
 .col-80 {
@@ -234,6 +479,30 @@ Sezione iscrizione
     width: 20%;
 }
 
+.max-row .content {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+/**/
+
+.max-row h1 {
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(91, 8, 38);
+}
+
+.max-row button {
+    background-color: white;
+    border: none;
+    color: black;
+}
+
+.col-80 .content {
+    width: 60%;
+    line-height: 1.3;
+}
+
 
 /*
 Sezione domande
@@ -242,6 +511,43 @@ Sezione domande
 .multiple-rows .row {
     max-width: 1200px;
     margin: auto;
+}
+
+.multiple-rows .content {
+    margin-top: 150px;
+    margin-bottom: 150px;
+
+}
+
+.layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/**/
+
+.multiple-rows h1 {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+
+.multiple-rows hr {
+    border: 1px solid lightgray;
+    color: lightgray;
+}
+
+.multiple-rows p {
+    font-weight: bold;
+}
+
+.multiple-rows .icon {
+    position: relative;
+    right: 50px;
 }
 
 
@@ -257,12 +563,54 @@ footer {
 .layout-5 .row {
     max-width: 1400px;
     margin: auto;
-    height: 400px;
     display: flex;
     flex-direction: row;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
-footer .row {
+.single-row {
     max-width: 1400px;
     margin: auto;
+    padding-bottom: 50px;
+    color: grey;
+}
+
+/**/
+
+footer h1 {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+footer p {
+    line-height: 2.5;
+}
+
+.single-row p {
+    padding-top: 40px;
+}
+
+.single-row hr {
+    width: 10%;
+    border: 1px solid white;
+}
+
+footer .icon {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+
+
+
+/**/
+
+button {
+    background-color: rgb(0, 88, 248);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
 }
